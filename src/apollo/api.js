@@ -1,7 +1,10 @@
+
+
 // src/apollo/api.js
 
-// This will automatically pick the correct URL based on environment
-export const API_URL = process.env.NEXT_PUBLIC_API_URL;
+// Use deployed backend in production, fallback to localhost for dev
+export const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "https://employee-backend-y5xe.onrender.com";
 
 // REST helper example
 export const getAllEmployees = async () => {
