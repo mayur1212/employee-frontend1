@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm install next && next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
-    "postinstall": "next build"
+    "postinstall": "npm install next"
   },
   "dependencies": {
     "@apollo/client": "^3.10.8",
